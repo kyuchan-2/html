@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* mycss.css */
+
+body {
+    color: rgb(87, 120, 222);
+    font-size: 1.5em;
+    /* em : 상대적 단위 
+    1em : 16px
+    2em : 32px
+    */
+}
+div {
+    font-family: 궁서체, sans-serif;
+    color: #1f9;
+    background-color: rgb(0, 0, 0);
+    margin: 1em;
+}

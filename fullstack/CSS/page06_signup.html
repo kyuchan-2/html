@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>sign_up</title>
+        <style>
+            .cls1 {
+                font-size: 10px;
+                color: blue;
+            }
+            .cls2 {
+                background-color: skyblue;
+                font-weight: 900;
+            }
+            .cls3 {
+                text-align: right;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2"><div class="cls2">아이디(ID)정보</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: yellow"><div class="cls3">* 아이디</div></td>
+                <td><input type="text" /><input type="button" value="중복검사" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cls1">(4~12자 영어/숫자 가능, 한글, 특수문자 ID는 사용할 수 없습니다.)</div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="cls3">* 비밀번호</div></td>
+                <td style="display: flex">
+                    <input type="text" />
+                    <div class="cls1">(4~8자 이내로 만들어 주세요)</div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="cls3">* 비밀번호 확인</div></td>
+                <td style="display: flex">
+                    <input type="text" />
+                    <div class="cls1">(위 번호와 같이 입력해 주세요)</div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><div class="cls2">개인정보</div></td>
+            </tr>
+            <tr>
+                <td><div class="cls3">* 이름(한글)</div></td>
+                <td style="display: flex">
+                    <input type="text" />
+                    <div class="cls1">(예: 홍길동)</div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="cls3">생년월일</div></td>
+                <td style="display: flex">
+                    <input type="date" name="birth" id="birth" min="1990-01-01" max="2025-12-31" />
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color: yellow"><div class="cls3">*주소</div></td>
+                <td><input type="text" /><input type="button" value="우편번호 찾기" /></td>
+            </tr>
+            <tr>
+                <td><input type="text" size="60" /></td>
+            </tr>
+            <tr>
+                <td style="background-color: yellow"><div class="cls3">* 전화번호</div></td>
+                <td style="display: flex">
+                    <p style="color: purple; font-size: 10px">핸드폰</p>
+                    <input type="text" />
+                    <label for="tel1"><input type="radio" name="SKT" id="SKT" value="SKT" />SKT </label>
+                    <label for="tel2"><input type="radio" name="KT" id="KT" value="KT" />KT</label>
+                    <label for="tel3"><input type="radio" name="LGT" id="LGT" value="LGT" />LGT</label>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="cls3">* 이메일</div></td>
+                <td><input type="text" /></td>
+            </tr>
+            <tr>
+                <td style="background-color: yellow"><div class="cls3">가입인사</div></td>
+                <td><textarea rows="6" cols="50"></textarea></td>
+            </tr>
+        </table>
+    </body>
+</html>
